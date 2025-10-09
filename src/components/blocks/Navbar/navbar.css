@@ -1,24 +1,42 @@
+.navbar-nav {
+  gap: 30px;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.nav-link.item:hover {
+  background-color: white;
+  color: black;
+}
+.navbar-toggler{
+  border-color: white;
+}
 .navbar {
-    background-color:#0B192C;
-  }
-  
-  .navbar-nav {
-    gap: 30px;
-  }
-  
-  .navbar-brand,
-  .nav-link {
-    color: #fff;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    font-size: 1.2rem;
-  }
-  
-  .logo {
-    font-size: 2rem;
-  }
-  
-  .nav-link.item:hover {
-    background-color: white;
-    color: black;
-  }
+  position: absolute;  
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent; 
+  z-index: 10;          
+  transition: background 0.3s; 
+}
+
+.navbar .nav-link {
+  color: white;
+  font-weight: 500;
+}
+
+.navbar-brand img {
+  margin-right: 10%;
+  z-index: 11;
+}

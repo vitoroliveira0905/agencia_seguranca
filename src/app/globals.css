@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -22,6 +23,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #0f213b !important
 }
 
 * {
@@ -41,18 +43,24 @@ a {
   }
 }
 
+.banner{
+  background-color: #172e50;
+}
 .banner img {
   height: 880px;
   object-fit: cover;
   position: relative;
+  mix-blend-mode: multiply;
 }
 
 main {
-  background-color: #0B192C;
+  background-color: #0f213b;
   color: #ffffff;
 }
 
 .banner-secao {
   position: absolute;
 }
-
+a:hover {
+  color: #465C88 !important;
+}

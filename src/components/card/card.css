@@ -1,6 +1,6 @@
 
 .custom-card {
-    background-color: #1E3E62; 
+    background-color: #0B192C; 
     border-radius: 15px; 
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
@@ -13,12 +13,12 @@
   }
  
   .custom-card .card-title {
-    color: #FF6500; 
+    color: #FF7A30; 
     font-size: 1.3rem;
   }
   
   .btn-custom {
-    background-color: #0B192C; 
+    background-color: #0f223a; 
     color: white;
     font-weight: 500;
     border: none;
@@ -28,17 +28,16 @@
   }
   
   .btn-custom:hover {
-    background-color: #FF6500; 
-    color: #000;
+    background-color: rgb(220, 53, 69); 
+    color: white;
+ 
   }
   
 
   .custom-badge {
-    background-color: #FF6500; 
+    background-color: #FF7A30; 
     color: #000;
     font-weight: bold;
     padding: 6px 10px;
-    border-radius: 20px;
-   
   }
   
