@@ -1,7 +1,8 @@
 import "./card.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Link from "next/link";
 
-export default function Card({ titulo, link, descricao, tags }) {
+export default function Card({id, titulo, link, descricao, tags }) {
   return (
 
 <div className="card shadow-lg border-0 custom-card text-white h-100">
@@ -12,7 +13,9 @@ export default function Card({ titulo, link, descricao, tags }) {
 
     <div className="mt-auto">
       <div className="d-flex justify-content-between align-items-center">
-        <button className="btn btn-custom ">Adquirir</button>
+      <Link href={`/Servicos/${id}`} className="btn btn-danger fw-bold w-100">
+                  Adquirir <i className="bi bi-arrow-right"></i>
+                </Link>
       </div>
 
       <div className="mt-3 d-flex flex-wrap gap-2">

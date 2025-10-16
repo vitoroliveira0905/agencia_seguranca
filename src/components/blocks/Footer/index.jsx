@@ -1,7 +1,7 @@
 
 import Link from 'next/link'
 
-export default function Navbar() {
+export default function Footer() {
     return (<>
     <footer
   className="text-light pt-5 pb-5"
@@ -25,10 +25,10 @@ export default function Navbar() {
           Navegação
         </h5>
         <ul className="list-unstyled mt-3">
-          <li><a href="#" className="text-light text-decoration-none">Início</a></li>
-          <li><a href="#produtos" className="text-light text-decoration-none">Produtos</a></li>
-          <li><a href="#sobre" className="text-light text-decoration-none">Sobre</a></li>
-          <li><a href="#contato" className="text-light text-decoration-none">Contato</a></li>
+          <li><a href="/" className="text-light text-decoration-none">Início</a></li>
+          <li><a href="/#servicos" className="text-light text-decoration-none">Serviços</a></li>
+          <li><a href="/Sobre" className="text-light text-decoration-none">Sobre</a></li>
+          <li><a href="/contato" className="text-light text-decoration-none">Contato</a></li>
         </ul>
       </div>
 

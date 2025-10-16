@@ -1,8 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 
+
+import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css"
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import "./globals.css";
 import Navbar from "@/components/blocks/Navbar";
 import Footer from "@/components/blocks/Footer";
 
@@ -24,10 +25,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Navbar />
-        {children}
+
+        <main className="flex-grow-1">
+        {children}  
+      </main>
+    
         <Footer />
 
       </body>

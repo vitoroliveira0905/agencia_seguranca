@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -45,12 +46,13 @@ a {
 
 .banner{
   background-color: #172e50;
+  height: 800px;
 }
 .banner img {
-  height: 880px;
   object-fit: cover;
   position: relative;
   mix-blend-mode: multiply;
+  height: 800px;
 }
 
 main {
@@ -60,7 +62,18 @@ main {
 
 .banner-secao {
   position: absolute;
+  
 }
+
 a:hover {
   color: #465C88 !important;
 }
+
+.custom-form {
+    background-color: #0B192C; 
+    border-radius: 15px; 
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    flex: 1;
+    
+  }

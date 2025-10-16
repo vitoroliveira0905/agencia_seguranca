@@ -36,22 +36,22 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link item d-flex justify-content-end pe-3" href="#">
+                <Link className="nav-link item d-flex justify-content-end pe-3" href="/">
                   Início
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link item d-flex justify-content-end pe-3" href="#produtos">
-                  Produtos
+                <Link className="nav-link item d-flex justify-content-end pe-3" href="/#servicos">
+                  Serviços
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link item d-flex justify-content-end pe-3" href="#sobre">
+                <Link className="nav-link item d-flex justify-content-end pe-3" href="/Sobre">
                   Sobre
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link item d-flex justify-content-end pe-3" href="#contato">
+                <Link className="nav-link item d-flex justify-content-end pe-3" href="/contato">
                   Contato
                 </Link>
               </li>
