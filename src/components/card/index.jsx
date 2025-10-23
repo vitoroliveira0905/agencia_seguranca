@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Card({id, titulo, link, descricao, tags }) {
   return (
 
-<div className="card shadow-lg border-0 custom-card text-white h-100">
+<div className="card shadow-lg border-0 custom-card text-white h-100" style={{background: "#0b192c"}}>
   <img src={link || "/img/default.png"} className="card-img-top" alt={titulo} />
   <div className="card-body d-flex flex-column">
     <h5 className="card-title fw-bold text-danger">{titulo}</h5>
@@ -13,7 +13,7 @@ export default function Card({id, titulo, link, descricao, tags }) {
 
     <div className="mt-auto">
       <div className="d-flex justify-content-between align-items-center">
-      <Link href={`/Servicos/${id}`} className="btn btn-danger fw-bold w-100">
+      <Link href={`/Servicos/${id}`} className="btn btn-danger fw-bold w-100 link">
                   Adquirir <i className="bi bi-arrow-right"></i>
                 </Link>
       </div>

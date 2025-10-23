@@ -33,14 +33,14 @@ export default function Home() {
                 style={{ minHeight: "100vh" }}>
                 <div className="container">
                     <div className="row w-100 d-flex justify-content-center">
-                        <form className="col-md-6 col-10 g-5 custom-form ">
+                        <form className="col-md-6 col-10 g-5 custom-form p-5">
                             <div className="mb-3">
                                 <label htmlFor="inputNome" className="form-label">
                                     Produto
                                 </label>
                                 <input
                                     type="text"
-                                    className="form-control"
+                                    className="form-control custom-input"
                                     id="inputNome"
 
                                 />
@@ -51,7 +51,7 @@ export default function Home() {
                                 </label>
                                 <input
                                     type="text"
-                                    className="form-control"
+                                    className="form-control custom-input"
                                     id="inputCategoria"
 
                                 />
@@ -61,7 +61,7 @@ export default function Home() {
                                     Preço
                                 </label>
                                 <input type="number"
-                                    className="form-control"
+                                    className="form-control custom-input"
                                     id="inputPreco"
 
                                 />
@@ -71,23 +71,24 @@ export default function Home() {
                                     Descrição
                                 </label>
                                 <input type="text"
-                                    className="form-control"
+                                    className="form-control custom-input custom-input"
                                     id="inputDescricao"
 
                                 />
                             </div>
-                            <div className="mb-5">
+                            <div className="mb-4">
                                 <label htmlFor="inputImagem" className="form-label">
                                     Imagem
                                 </label>
                                 <input type="text"
-                                    className="form-control"
+                                    className="form-control custom-input"
                                     id="inputImagem"
 
                                 />
                             </div>
+
                             <div className="w-100 d-flex justify-content-center">
-                                <button type="submit" className="btn btn-danger">
+                                <button type="submit" className="btn btn-danger m-3" style={{ width: "100px" }}>
                                     Adicionar
                                 </button>
                             </div>
@@ -97,57 +98,59 @@ export default function Home() {
 
             </main>
 
-
-            <div className="container-fluid mt-5">
-                <div className="row">
-                    <div className="col-md-8 p-0">
-                        <iframe
-                            className="map w-100 h-100"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.794292397156!2d-46.65657198538472!3d-23.580068768562907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c63dbe74d5%3A0x2d5c02a8d0d080df!2sPaulista!5e0!3m2!1spt-BR!2sbr!4v1691580000000!5m2!1spt-BR!2sbr"
-                            allowFullScreen=""
-                            loading="lazy"
-                        ></iframe>
-                    </div>
-                    <div className="col-md-4 barra-lateral">
-                        <form className="mb-3">
-                            <input
-                                type="text"
-                                className="form-control bg-dark text-light"
-                                placeholder="Buscar loja..."
-                            />
-                        </form>
-                        <ul className="list-group ">
-                            <li className="list-group-item p-4 text-light " style={{backgroundColor: "#0b192c", border: "none"}}>
-                                Rua das Palmeiras, 482 – Jardim América, São Paulo – SP, 01427-000
-                            </li>
-                            <li className="list-group-item p-4 text-light" style={{backgroundColor: "#0b192c", border: "none"}}>
-                                Avenida Atlântica, 1901 – Copacabana, Rio de Janeiro – RJ, 22021-001
-                            </li>
-                            <li className="list-group-item p-4 text-light" style={{backgroundColor: "#0b192c", border: "none"}}>
-                                Rua das Flores, 75 – Centro, Curitiba – PR, 80020-090
-                            </li>
-                            <li className="list-group-item p-4 text-light" style={{backgroundColor: "#0b192c", border: "none"}}>
-                                Avenida Brasil, 3260 – Funcionários, Belo Horizonte – MG, 30140-002
-                            </li>
-                            <li className="list-group-item p-4 text-light" style={{backgroundColor: "#0b192c", border: "none", border: "none"}}>
-                                Rua Dom Pedro II, 210 – Centro, Porto Alegre – RS, 90010-050
-                            </li>
-                            <li className="list-group-item p-4 text-light" style={{backgroundColor: "#0b192c"}}>
-                                Rua Bahia, 1345 – Savassi, Belo Horizonte – MG, 30160-011
-                            </li>
-                            <li className="list-group-item p-4 text-light" style={{backgroundColor: "#0b192c", border: "none"}}>
-                                Alameda Santos, 999 – Cerqueira César, São Paulo – SP, 01419-001
-                            </li>
-                            <li className="list-group-item p-4 text-light" style={{backgroundColor: "#0b192c", border: "none"}}>
-                                Rua XV de Novembro, 404 – Centro, Florianópolis – SC, 88010-400
-                            </li>
-                            <li className="list-group-item p-4 text-light" style={{backgroundColor: "#0b192c", border: "none"}}>
-                                Avenida Sete de Setembro, 1870 – Centro, Salvador – BA, 40060-002
-                            </li>
-                        </ul>
+            <section className="w-100 p-5" style={{ backgroundColor: "var(--section-background)" }}>
+                <div className="container-fluid mt-5">
+                    <div className="row">
+                        <div className="col-md-8 p-0">
+                            <iframe
+                                className="map w-100 h-100"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.794292397156!2d-46.65657198538472!3d-23.580068768562907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c63dbe74d5%3A0x2d5c02a8d0d080df!2sPaulista!5e0!3m2!1spt-BR!2sbr!4v1691580000000!5m2!1spt-BR!2sbr"
+                                allowFullScreen=""
+                                loading="lazy"
+                            ></iframe>
+                        </div>
+                        <div className="col-md-4 barra-lateral">
+                            <form className="mb-3">
+                                <input
+                                    type="text"
+                                    className="form-control custom-input text-light"
+                                    placeholder="Buscar loja..."
+                                />
+                            </form>
+                            <ul className="list-group ">
+                                <li className="list-group-item p-4 text-light " style={{ backgroundColor: "#0b192c", border: "none" }}>
+                                    Rua das Palmeiras, 482 – Jardim América, São Paulo – SP, 01427-000
+                                </li>
+                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "#0b192c", border: "none" }}>
+                                    Avenida Atlântica, 1901 – Copacabana, Rio de Janeiro – RJ, 22021-001
+                                </li>
+                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "#0b192c", border: "none" }}>
+                                    Rua das Flores, 75 – Centro, Curitiba – PR, 80020-090
+                                </li>
+                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "#0b192c", border: "none" }}>
+                                    Avenida Brasil, 3260 – Funcionários, Belo Horizonte – MG, 30140-002
+                                </li>
+                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "#0b192c", border: "none", border: "none" }}>
+                                    Rua Dom Pedro II, 210 – Centro, Porto Alegre – RS, 90010-050
+                                </li>
+                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "#0b192c" }}>
+                                    Rua Bahia, 1345 – Savassi, Belo Horizonte – MG, 30160-011
+                                </li>
+                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "#0b192c", border: "none" }}>
+                                    Alameda Santos, 999 – Cerqueira César, São Paulo – SP, 01419-001
+                                </li>
+                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "#0b192c", border: "none" }}>
+                                    Rua XV de Novembro, 404 – Centro, Florianópolis – SC, 88010-400
+                                </li>
+                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "#0b192c", border: "none" }}>
+                                    Avenida Sete de Setembro, 1870 – Centro, Salvador – BA, 40060-002
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
 
         </>
     );

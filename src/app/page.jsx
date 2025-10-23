@@ -33,8 +33,8 @@ export default function Home() {
     <>
 
       <main className="mb-5">
-        <div className="position-relative text-center banner">
-          <img src="/img/banner1.png" className="w-100" alt="Banner"></img>
+        <div className="position-relative text-center banner vh-100">
+          <img src="/img/banner1.png" className="w-100 h-100" alt="Banner"></img>
           <div className="position-absolute top-50 start-50 translate-middle text-white">
             <div className="py-5">
               <h1 className="display-5 fw-bold text-white mb-4 ">Sentinel Security</h1>
@@ -43,56 +43,56 @@ export default function Home() {
                   Protegemos a sua segurança em todos os momentos da sua vida, desde serviços de patrulha até escoltas. Com confidencialidade e confiabilidade.
                 </p>
                 <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                  <button
-                    type="button"
-                    className="btn btn-danger btn-lg px-4 me-sm-3 fw-bold"
-                  >
+                  <Link href="#servicos"  className="btn btn-danger btn-lg px-4 me-sm-3 fw-bold">
+                
                     Veja nossos Serviços
-                  </button>
 
+              </Link>
                 </div>
               </div>
             </div>
           </div>
 
         </div>
-        <section className="container py-5 my-5">
+        <div className="w-100 p-5" style={{ backgroundColor: "var( --background)" }}>
+          <section className="container py-5 " >
 
-          <div className="row align-items-start">
+            <div className="row align-items-start">
 
-            <div className="col-12 col-lg-6 mb-4 mb-lg-0">
-              <img
-                src="https://res2.weblium.site/res/weblium/5c8a2bf61541e40024d92142_optimized_1395_c1395x931-0x0.webp"
-                alt="Imagem Principal"
-                className="img-fluid rounded shadow"
-              />
-            </div>
+              <div className="col-12 col-lg-6 mb-4 mb-lg-0">
+                <img
+                  src="https://res2.weblium.site/res/weblium/5c8a2bf61541e40024d92142_optimized_1395_c1395x931-0x0.webp"
+                  alt="Imagem Principal"
+                  className="img-fluid rounded shadow"
+                />
+              </div>
 
 
-            <div className="col-12 col-lg-6 d-flex flex-column">
-              <p className="fst-italic fs-5">
-                Na <strong>Sentinel Security</strong>, oferecemos soluções completas em segurança patrimonial, empresarial e pessoal.
-                Com tecnologia de ponta e uma equipe altamente treinada, garantimos tranquilidade, confiança e proteção 24 horas por dia.
-              </p>
+              <div className="col-12 col-lg-6 d-flex flex-column" >
+                <p className="fst-italic fs-5">
+                  Na <strong>Sentinel Security</strong>, oferecemos soluções completas em segurança patrimonial, empresarial e pessoal.
+                  Com tecnologia de ponta e uma equipe altamente treinada, garantimos tranquilidade, confiança e proteção 24 horas por dia.
+                </p>
 
-              <ul className="list-unstyled mb-4 mt-3">
-                <li className="mb-2">
-                  <i className="bi bi-list-check me-2 text-danger"></i>Monitoramento 24/7
-                </li>
-                <li className="mb-2">
-                  <i className="bi bi-list-check me-2 text-danger"></i>Equipe treinada e certificada
-                </li>
-                <li className="mb-2">
-                  <i className="bi bi-list-check me-2 text-danger"></i>Tecnologia de ponta
-                </li>
-              </ul>
+                <ul className="list-unstyled mb-4 mt-3">
+                  <li className="mb-2">
+                    <i className="bi bi-list-check me-2 text-danger"></i>Monitoramento 24/7
+                  </li>
+                  <li className="mb-2">
+                    <i className="bi bi-list-check me-2 text-danger"></i>Equipe treinada e certificada
+                  </li>
+                  <li className="mb-2">
+                    <i className="bi bi-list-check me-2 text-danger"></i>Tecnologia de ponta
+                  </li>
+                </ul>
 
-              <div className="mt-auto">
-                <button className="btn btn-danger btn-lg">Saiba Mais</button>
+                <div className="mt-auto">
+                  <button className="btn btn-danger btn-lg">Saiba Mais</button>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
 
 
@@ -100,24 +100,26 @@ export default function Home() {
 
 
 
-        <section className="container my-5">
-          <h1 className="text-center mb-4 fw-bold">Serviços que Oferecemos</h1>
+        <div className="w-100 p-5" >
+          <section className="container ">
+            <h1 className="text-center mb-4 fw-bold">Serviços que Oferecemos</h1>
 
-          <div className="row g-5 " id="servicos" >
-            {servicos.map((servico, index) => (
-              <div className="col-md-4" key={index}>
+            <div className="row g-5 " id="servicos" >
+              {servicos.map((servico, index) => (
+                <div className="col-md-4" key={index}>
 
-                <Card
-                  id={servico.id}
-                  link={servico.img}
-                  titulo={servico.titulo}
-                  descricao={servico.descricao}
-                  tags={servico.tags}
-                /></div>
+                  <Card
+                    id={servico.id}
+                    link={servico.img}
+                    titulo={servico.titulo}
+                    descricao={servico.descricao}
+                    tags={servico.tags}
+                  /></div>
 
-            ))}
-          </div>
-        </section>
+              ))}
+            </div>
+          </section></div>
+
       </main>
 
     </>
