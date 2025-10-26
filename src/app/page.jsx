@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <>
 
-      <main className="mb-5">
+      <main>
         <div className="position-relative text-center banner vh-100">
           <img src="/img/banner1.png" className="w-100 h-100" alt="Banner"></img>
           <div className="position-absolute top-50 start-50 translate-middle text-white">
@@ -100,8 +100,8 @@ export default function Home() {
 
 
 
-        <div className="w-100 p-5" >
-          <section className="container ">
+        <div className="w-100 p-5" style={{backgroundColor: "var( --section-background)"}}>
+          <section className="container " style={{backgroundColor: "var( --section-background)"}}>
             <h1 className="text-center mb-4 fw-bold">Serviços que Oferecemos</h1>
 
             <div className="row g-5 " id="servicos" >

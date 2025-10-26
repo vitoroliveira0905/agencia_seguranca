@@ -5,7 +5,7 @@ export default function Footer() {
     return (<>
     <footer
   className="text-light pt-5 pb-5"
-  style={{ backgroundColor: "#0b192c" }}
+  style={{ backgroundColor: "#131F3F" }}
 >
   <div className="container">
     <div className="row gy-4 justify-content-between align-items-start">

@@ -123,11 +123,11 @@ export default function ServicoIndividual() {
     <main
       className="text-light"
       style={{
-        background: "linear-gradient(135deg, #0b192c 30%, #11161f 100%)",
+        background: "var(--background)",
         minHeight: "100vh",
       }}
     >
-    
+
       <section
         className="position-relative d-flex align-items-center justify-content-center"
         style={{
@@ -139,7 +139,7 @@ export default function ServicoIndividual() {
       >
         <div
           className="position-absolute top-0 start-0 w-100 h-100"
-          style={{ background: "rgba(11, 25, 44, 0.5)" }}
+          style={{ background: "rgba(22, 30, 63, 0.77)" }}
         ></div>
 
         <div className="position-relative text-center px-3">
@@ -161,8 +161,8 @@ export default function ServicoIndividual() {
         </div>
       </section>
 
-   
-      <section className="container py-5">
+
+      <section className="container py-5" >
         <h2 className="fw-bold mb-4 text-center" style={{ color: "#d9d9d9" }}>
           O que oferecemos
         </h2>
@@ -183,8 +183,8 @@ export default function ServicoIndividual() {
         </div>
       </section>
 
-      
-      <section style={{ background: "#091422" }} className="py-5">
+
+      <section className="py-5" style={{ background: "var(--section-background)" }}>
         <div className="container text-center">
           <h2 className="fw-bold mb-4" style={{ color: "#e63946" }}>
             Por que escolher este serviço?
@@ -195,7 +195,7 @@ export default function ServicoIndividual() {
                 <div
                   className="p-4 rounded-4 shadow-sm border h-100"
                   style={{
-                    background: "#0b192c",
+                    background: "var(--background)",
                     borderColor: "#d9d9d9",
                     color: "white",
                   }}
@@ -223,7 +223,7 @@ export default function ServicoIndividual() {
                 className="p-4 rounded-4 shadow-sm d-flex flex-column justify-content-between text-light w-100 h-100"
                 style={{
                   minHeight: "150px",
-                  background: "#13273f",
+                  background: "var(--section-background)",
                   border: "1px solid #d9d9d9",
                 }}
               >
@@ -242,7 +242,7 @@ export default function ServicoIndividual() {
 
       <section
         className="text-center py-5 border-top"
-        style={{ borderColor: "#e63946" }}
+        style={{ borderColor: "#e63946", backgroundColor: "var(--section-background)" }}
       >
         <h3 className="fw-bold mb-3 text-light">
           Pronto para contratar nossos serviços?

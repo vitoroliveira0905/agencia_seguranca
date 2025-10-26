@@ -1,5 +1,6 @@
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../globals.css";
 
 export default function Home() {
     const servicos = [
@@ -30,10 +31,10 @@ export default function Home() {
         <>
             <main
                 className="d-flex flex-direction-column justify-content-center align-items-center py-5"
-                style={{ minHeight: "100vh" }}>
+                style={{ minHeight: "100vh", backgroundColor: "var(--background)" }}>
                 <div className="container">
                     <div className="row w-100 d-flex justify-content-center">
-                        <form className="col-md-6 col-10 g-5 custom-form p-5">
+                        <form className="col-md-6 col-10 g-5 p-5 custom-form" >
                             <div className="mb-3">
                                 <label htmlFor="inputNome" className="form-label">
                                     Produto
@@ -104,10 +105,11 @@ export default function Home() {
                         <div className="col-md-8 p-0">
                             <iframe
                                 className="map w-100 h-100"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.794292397156!2d-46.65657198538472!3d-23.580068768562907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c63dbe74d5%3A0x2d5c02a8d0d080df!2sPaulista!5e0!3m2!1spt-BR!2sbr!4v1691580000000!5m2!1spt-BR!2sbr"
+                                src="https://www.google.com/maps/d/u/0/embed?mid=1bQNZWDNFLU6WTDs91McUZ_UGb4jyfZ8&ehbc=2E312F&noprof=1"
                                 allowFullScreen=""
                                 loading="lazy"
                             ></iframe>
+
                         </div>
                         <div className="col-md-4 barra-lateral">
                             <form className="mb-3">
@@ -118,31 +120,31 @@ export default function Home() {
                                 />
                             </form>
                             <ul className="list-group ">
-                                <li className="list-group-item p-4 text-light " style={{ backgroundColor: "#0b192c", border: "none" }}>
+                                <li className="list-group-item p-4 text-light " style={{ backgroundColor: "var(--background)", border: "none" }}>
                                     Rua das Palmeiras, 482 – Jardim América, São Paulo – SP, 01427-000
                                 </li>
-                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "#0b192c", border: "none" }}>
+                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "var(--background)", border: "none" }}>
                                     Avenida Atlântica, 1901 – Copacabana, Rio de Janeiro – RJ, 22021-001
                                 </li>
-                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "#0b192c", border: "none" }}>
+                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "var(--background)", border: "none" }}>
                                     Rua das Flores, 75 – Centro, Curitiba – PR, 80020-090
                                 </li>
-                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "#0b192c", border: "none" }}>
+                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "var(--background)", border: "none" }}>
                                     Avenida Brasil, 3260 – Funcionários, Belo Horizonte – MG, 30140-002
                                 </li>
-                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "#0b192c", border: "none", border: "none" }}>
+                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "var(--background)", border: "none" }}>
                                     Rua Dom Pedro II, 210 – Centro, Porto Alegre – RS, 90010-050
                                 </li>
-                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "#0b192c" }}>
+                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "var(--background)", border: "none" }}>
                                     Rua Bahia, 1345 – Savassi, Belo Horizonte – MG, 30160-011
                                 </li>
-                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "#0b192c", border: "none" }}>
+                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "var(--background)", border: "none" }}>
                                     Alameda Santos, 999 – Cerqueira César, São Paulo – SP, 01419-001
                                 </li>
-                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "#0b192c", border: "none" }}>
+                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "var(--background)", border: "none" }}>
                                     Rua XV de Novembro, 404 – Centro, Florianópolis – SC, 88010-400
                                 </li>
-                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "#0b192c", border: "none" }}>
+                                <li className="list-group-item p-4 text-light" style={{ backgroundColor: "var(--background)", border: "none" }}>
                                     Avenida Sete de Setembro, 1870 – Centro, Salvador – BA, 40060-002
                                 </li>
                             </ul>

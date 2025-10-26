@@ -4,8 +4,8 @@
 
   --foreground: #171717;
   --element-color: rgb(220, 53, 69);
-  --background: #091422;
-  --section-background: #091422;
+  --background: #131F3F;
+  --section-background: #182544;
 }
 
 
@@ -41,7 +41,7 @@ a {
 }
 
 .banner {
- background-color: #727070fa;
+ background-color: rgb(49, 59, 94);
 }
 
 .banner img {
