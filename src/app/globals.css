@@ -69,12 +69,62 @@ main {
 
 
 .custom-input {
-  background: var(--background) !important;
+  background: var(--section-background) !important;
   border: none !important;
   border-bottom: 2px solid crimson !important;
   border-radius: 0px !important;
+
+}
+
+.custom-input::placeholder {
+ color: rgb(160, 160, 160) !important;
 }
 
 .custom-input:focus {
   box-shadow: 0 0 5px .15rem rgba(67, 113, 187, 0.548) !important;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+.card-equipe {
+  background: var(--background);
+  border: 1px solid #d9d9d9;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-equipe:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+}
+.image-wrapper img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.image-wrapper img:hover {
+  transform: scale(1.1);
+}
+.animate-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.animate-card.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

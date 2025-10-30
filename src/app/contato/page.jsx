@@ -1,6 +1,7 @@
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../globals.css";
+import Link from "next/link";
 
 export default function Home() {
     const servicos = [
@@ -29,91 +30,118 @@ export default function Home() {
 
     return (
         <>
-            <main
-                className="d-flex flex-direction-column justify-content-center align-items-center py-5"
-                style={{ minHeight: "100vh", backgroundColor: "var(--background)" }}>
-                <div className="container">
-                    <div className="row w-100 d-flex justify-content-center">
-                        <form className="col-md-6 col-10 g-5 p-5 custom-form" >
-                            <div className="mb-3">
-                                <label htmlFor="inputNome" className="form-label">
-                                    Produto
-                                </label>
-                                <input
-                                    type="text"
-                                    className="form-control custom-input"
-                                    id="inputNome"
+            <div style={{ minHeight: "100px" }}></div>
+            <div
+                className="d-flex justify-content-center align-items-center "
+                style={{
 
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="inputCategoria" className="form-label">
-                                    Categoria
-                                </label>
-                                <input
-                                    type="text"
-                                    className="form-control custom-input"
-                                    id="inputCategoria"
+                    minHeight: "90vh",
+                    backgroundColor: "var(--section-background)",
+                }}
+            >
+                <section className="container p-5">
+                    <div className="row align-items-center justify-content-center">
 
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="inputPreco" className="form-label">
-                                    Preço
-                                </label>
-                                <input type="number"
-                                    className="form-control custom-input"
-                                    id="inputPreco"
 
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="inputDescricao" className="form-label">
-                                    Descrição
-                                </label>
-                                <input type="text"
-                                    className="form-control custom-input custom-input"
-                                    id="inputDescricao"
+                        <div className="col-lg-6 col-md-6 col-12 text-center mb-4 mb-md-0">
+                            <img
+                                src="./img/img_login.png"
+                                alt="Imagem ilustrativa"
+                                className="img-fluid float-animation"
+                                style={{ maxWidth: "90%", height: "auto" }}
+                            />
+                        </div>
 
-                                />
-                            </div>
-                            <div className="mb-4">
-                                <label htmlFor="inputImagem" className="form-label">
-                                    Imagem
-                                </label>
-                                <input type="text"
-                                    className="form-control custom-input"
-                                    id="inputImagem"
+                        {/* Formulário */}
+                        <div className="col-lg-5 col-md-8 col-12">
+                            <form
+                                className="p-4 p-md-5 custom-form mx-auto shadow-lg rounded-4"
+                                style={{ backgroundColor: "var(--background)", maxWidth: "500px" }}
+                            >
+                                <h3 className="text-center mb-4 text-light fw-bold">
+                                    Cadastro de Serviço
+                                </h3>
 
-                                />
-                            </div>
+                                <div className="mb-4">
+                                    <label htmlFor="inputNome" className="form-label text-light">
+                                        Nome completo
+                                    </label>
+                                    <input
+                                        type="text"
+                                        className="form-control custom-input text-light"
+                                        id="inputNome"
+                                    />
+                                </div>
 
-                            <div className="w-100 d-flex justify-content-center">
-                                <button type="submit" className="btn btn-danger m-3" style={{ width: "100px" }}>
-                                    Adicionar
-                                </button>
-                            </div>
-                        </form>
+                                <div className="mb-4">
+                                    <label htmlFor="inputTel" className="form-label text-light">
+                                        Número de Telefone
+                                    </label>
+                                    <input
+                                        type="text"
+                                        className="form-control custom-input text-light"
+                                        id="inputTel"
+                                    />
+                                </div>
+
+                                <div className="mb-4">
+                                    <label htmlFor="inputEmail" className="form-label text-light">
+                                        Email
+                                    </label>
+                                    <input
+                                        type="email"
+                                        className="form-control custom-input text-light"
+                                        id="inputEmail"
+                                    />
+                                </div>
+
+                                <div className="mb-5">
+                                    <label htmlFor="inputMensagem" className="form-label text-light">
+                                        Mensagem
+                                    </label>
+                                    <input
+                                        type="text"
+                                        className="form-control custom-input text-light"
+                                        id="inputMensagem"
+                                    />
+                                </div>
+
+
+
+                                <div className="d-flex justify-content-center">
+                                    <button
+                                        type="submit"
+                                        className="btn btn-danger fw-semibold"
+                                        style={{ width: "150px" }}
+                                    >
+                                        Enviar
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                </div>
+                </section>
+            </div>
 
-            </main>
 
-            <section className="w-100 p-5" style={{ backgroundColor: "var(--section-background)" }}>
-                <div className="container-fluid mt-5">
+                <section className="w-100" style={{ backgroundColor: "var(--section-background)" }}>
+                   
+                <div className="container-fluid p-5 ">
                     <div className="row">
                         <div className="col-md-8 p-0">
                             <iframe
                                 className="map w-100 h-100"
-                                src="https://www.google.com/maps/d/u/0/embed?mid=1bQNZWDNFLU6WTDs91McUZ_UGb4jyfZ8&ehbc=2E312F&noprof=1"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.118452801427!2d-46.655042123788085!3d-23.564188861697787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7ddc19239%3A0xe60220ddf111bff7!2sEdif%C3%ADcio%20Paulista%201100!5e0!3m2!1spt-BR!2sbr!4v1761822264395!5m2!1spt-BR!2sbr"
                                 allowFullScreen=""
                                 loading="lazy"
                             ></iframe>
 
                         </div>
                         <div className="col-md-4 barra-lateral">
-                            <form className="mb-3">
+                            <form className="mb-3" >
                                 <input
+
+
                                     type="text"
                                     className="form-control custom-input text-light"
                                     placeholder="Buscar loja..."
@@ -151,9 +179,10 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </section>
+                </section>
 
-
+                
+           
         </>
     );
 
